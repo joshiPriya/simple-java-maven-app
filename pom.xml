@@ -20,11 +20,11 @@
   <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>http://10.100.90.206:8081/#browse/browse:maven-snapshot</url>
+      <url>http://10.100.90.206:8081/maven-snapshot/</url>
     </snapshotRepository>
     <repository>
       <id>nexus-releases</id>
-      <url>http://10.100.90.206:8081/#browse/browse:maven-release</url>
+      <url>http://10.100.90.206:8081/maven-release/</url>
     </repository>
   </distributionManagement>
   
@@ -46,12 +46,5 @@
         </configuration>
       </plugin>
     </plugins>
-    <extensions>
-         <extension>
-             <groupId>org.apache.maven.wagon</groupId>
-             <artifactId>wagon-http</artifactId>
-             <version>2.10</version>
-         </extension>
-     </extensions>
   </build>
 </project>
