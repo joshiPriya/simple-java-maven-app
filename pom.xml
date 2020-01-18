@@ -4,7 +4,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.2</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -18,14 +18,16 @@
   
   <!-- added new-->
   <distributionManagement>
-    <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://10.100.90.206:8081/repository/maven-snapshot/</url>
-    </snapshotRepository>
+    
     <repository>
-      <id>nexus-releases</id>
+      <id>maven-release</id>
       <url>http://10.100.90.206:8081/repository/maven-release/</url>
     </repository>
+    <snapshotRepository>
+      <id>maven-snapshot</id>
+      <url>http://10.100.90.206:8081/repository/maven-snapshot/</url>
+    </snapshotRepository>
+    
   </distributionManagement>
   
   <build>
